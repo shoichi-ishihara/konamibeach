@@ -51,7 +51,7 @@ export default function Weather() {
         const fetchWeather = async () => {
             try {
                 const res = await fetch(
-                    `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&current_weather=true&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Asia%2FTokyo`
+                    `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&current_weather=true&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Asia%2FTokyo&windspeed_unit=ms`
                 );
                 const data = await res.json();
                 setWeather(data);
@@ -108,7 +108,7 @@ export default function Weather() {
                         </div>
                         <div className="flex items-center gap-2 text-gray-600 bg-gray-50 px-4 py-2 rounded-full">
                             <Wind className="h-5 w-5" />
-                            <span>風速 {weather.current_weather.windspeed} km/h</span>
+                            <span>風速 {weather.current_weather.windspeed} m/s</span>
                         </div>
                     </div>
 

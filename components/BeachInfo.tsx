@@ -6,7 +6,7 @@ const features = [
     {
         name: '抜群の透明度',
         description:
-            '環境省の水質調査でも高い評価を得ている、透き通るような青い海。シュノーケリングにも最適で、魚たちと一緒に泳ぐことができます。',
+            '水質調査でも高い評価を得ている、透き通るような青い海アクアブルー。シュノーケリングにも最適で、魚たちと一緒に泳ぐことができます。',
         icon: Sparkles,
         image: '/images/beach-clear-water.svg',
         reverse: false,
@@ -14,7 +14,7 @@ const features = [
     {
         name: '遠浅で安心',
         description:
-            '波が穏やかで遠浅な地形のため、小さなお子様連れのご家族でも安心して海水浴をお楽しみいただけます。ライフセーバーも常駐しています。',
+            '波が穏やかで遠浅な地形のため、小さなお子様連れのご家族でも安心して海水浴をお楽しみいただけます。',
         icon: ShieldCheck,
         image: '/images/beach-shallow.svg',
         reverse: true,

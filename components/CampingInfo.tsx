@@ -7,7 +7,7 @@ const features = [
     {
         name: 'フリーサイト',
         description:
-            'ビーチのすぐそばにテントを張れるフリーサイト。波の音をBGMに、最高のロケーションでキャンプを楽しめます。予約不要のエリアもあります。',
+            'ビーチのすぐそばにテントを張れるフリーサイト。波の音をBGMに、最高のロケーションでキャンプを楽しめます。',
         icon: Tent,
         image: '/images/camping-tent.svg',
         reverse: false,

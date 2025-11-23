@@ -15,7 +15,7 @@ export default function Access() {
                     {/* Map */}
                     <div className="w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.687727827854!2d133.0166666!3d35.5833333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35570f0f0f0f0f0f%3A0x0!2z5bCP5rOi5rW35rC05rW05aC0!5e0!3m2!1sja!2sjp!4v1620000000000!5m2!1sja!2sjp"
+                            src="https://maps.google.com/maps?q=35.58871248748659,133.0991142341808&hl=ja&z=15&output=embed"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
@@ -39,7 +39,7 @@ export default function Access() {
                             <div>
                                 <h3 className="text-lg font-semibold leading-8 text-gray-900">住所</h3>
                                 <p className="mt-2 text-base leading-7 text-gray-600">
-                                    〒690-1213<br />
+                                    〒690-1212<br />
                                     島根県松江市島根町小波
                                 </p>
                             </div>
@@ -54,8 +54,8 @@ export default function Access() {
                             <div>
                                 <h3 className="text-lg font-semibold leading-8 text-gray-900">お車でお越しの場合</h3>
                                 <p className="mt-2 text-base leading-7 text-gray-600">
-                                    松江市街地から約40分。<br />
-                                    県道37号線を北上し、島根町方面へ。
+                                    松江市街地から約30分。<br />
+                                    県道21,37号線を北上し、島根町方面へ。
                                     駐車場あり（有料期間あり）。
                                 </p>
                             </div>
