@@ -70,8 +70,8 @@ export default function Access() {
                             <div>
                                 <h3 className="text-lg font-semibold leading-8 text-gray-900">公共交通機関</h3>
                                 <p className="mt-2 text-base leading-7 text-gray-600">
-                                    JR松江駅から一畑バス（島根町方面行き）に乗車。<br />
-                                    「小波」バス停下車、徒歩すぐ。
+                                    JR松江駅より一畑バス「マリンプラザ行き」約40分。<br />
+                                    「マリンゲートしまね」よりコミュニテイバスで約20分。「小波」下車すぐ。
                                 </p>
                             </div>
                         </div>
