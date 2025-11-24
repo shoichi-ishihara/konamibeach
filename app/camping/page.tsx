@@ -6,7 +6,7 @@ import Link from 'next/link';
 const facilities = [
     {
         name: 'フリーサイト',
-        description: '海沿いの砂浜や松林の中にテントを張ることができます。波の音を聞きながらのキャンプは格別です。',
+        description: '海沿いの芝生エリアにテントを張ることができます。波の音を聞きながらのキャンプは格別です。',
         icon: Tent,
     },
     {

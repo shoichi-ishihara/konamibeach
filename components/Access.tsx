@@ -15,7 +15,7 @@ export default function Access() {
                     {/* Map */}
                     <div className="w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
                         <iframe
-                            src="https://maps.google.com/maps?q=35.58871248748659,133.0991142341808&hl=ja&z=15&output=embed"
+                            src="https://maps.google.com/maps?q=35.588312,133.098013&hl=ja&z=15&output=embed"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
