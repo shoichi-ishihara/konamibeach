@@ -54,13 +54,9 @@ export default function Header() {
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/camping" className="text-sm font-semibold leading-6 text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all">
-            キャンプ場予約 <span aria-hidden="true">&rarr;</span>
-          </Link>
-        </div>
+
       </nav>
-      
+
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden" role="dialog" aria-modal="true">
@@ -94,15 +90,7 @@ export default function Header() {
                     </Link>
                   ))}
                 </div>
-                <div className="py-6">
-                  <Link
-                    href="/camping"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    キャンプ場予約
-                  </Link>
-                </div>
+
               </div>
             </div>
           </div>

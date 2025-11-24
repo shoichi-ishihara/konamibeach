@@ -14,15 +14,7 @@ export default function Hero() {
             </div>
 
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 text-center">
-                <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-white/50 hover:ring-white/80 transition-all">
-                        2025年度の海開きは7月上旬予定です{' '}
-                        <Link href="/#weather" className="font-semibold text-accent">
-                            <span className="absolute inset-0" aria-hidden="true" />
-                            天気をチェック <span aria-hidden="true">&rarr;</span>
-                        </Link>
-                    </div>
-                </div>
+
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl drop-shadow-lg">
                     小波海水浴場
                 </h1>
@@ -37,8 +29,17 @@ export default function Hero() {
                     >
                         キャンプ場を予約
                     </Link>
-                    <Link href="/#access" className="text-sm font-semibold leading-6 text-white hover:text-accent transition-colors">
-                        アクセス <span aria-hidden="true">→</span>
+                    <Link
+                        href="/#access"
+                        className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all transform hover:scale-105"
+                    >
+                        アクセス
+                    </Link>
+                    <Link
+                        href="/#weather"
+                        className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all transform hover:scale-105"
+                    >
+                        天気をチェック
                     </Link>
                 </div>
             </div>
