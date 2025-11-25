@@ -80,7 +80,7 @@ export default function CampingPage() {
                             {/* Placeholder for Google Calendar Embed */}
                             <div className="aspect-[4/3] md:aspect-[16/9] w-full bg-gray-100 relative">
                                 <iframe
-                                    src="https://calendar.google.com/calendar/embed?src=ja.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo"
+                                    src="https://calendar.google.com/calendar/embed?src=0ff7e6cba8a24e3647d80a54c09d21bbb492352c4b7babb7395816d3ccd2730c%40group.calendar.google.com&ctz=Asia%2FTokyo"
                                     style={{ border: 0 }}
                                     width="100%"
                                     height="100%"
