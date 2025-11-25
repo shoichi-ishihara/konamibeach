@@ -2,6 +2,8 @@
 
 import { Tent, Droplets, Flame, Car, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import { useState } from 'react';
+import ReservationModal from '@/components/ReservationModal';
 
 const facilities = [
     {
@@ -27,6 +29,7 @@ const facilities = [
 ];
 
 export default function CampingPage() {
+    const [isReservationModalOpen, setIsReservationModalOpen] = useState(false);
     return (
         <div className="bg-white pt-24 pb-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -88,9 +91,9 @@ export default function CampingPage() {
                                     scrolling="no"
                                     title="Google Calendar"
                                 ></iframe>
-                                <div className="absolute bottom-0 left-0 right-0 bg-white/90 p-2 text-xs text-center text-gray-500">
+                                {/*<div className="absolute bottom-0 left-0 right-0 bg-white/90 p-2 text-xs text-center text-gray-500">
                                     ※ これはサンプルのカレンダーです。実際の予約状況ではありません。
-                                </div>
+                                </div>*/}
                             </div>
                         </div>
 
@@ -98,13 +101,20 @@ export default function CampingPage() {
                             <p className="text-gray-600 mb-6">
                                 ご希望の日程が空いている場合は、以下よりご予約ください。
                             </p>
-                            <button className="rounded-full bg-accent px-10 py-4 text-lg font-bold text-gray-900 shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                            <button
+                                onClick={() => setIsReservationModalOpen(true)}
+                                className="rounded-full bg-accent px-10 py-4 text-lg font-bold text-gray-900 shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:-translate-y-0.5 transition-all"
+                            >
                                 予約フォームへ進む
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <ReservationModal
+                isOpen={isReservationModalOpen}
+                onClose={() => setIsReservationModalOpen(false)}
+            />
         </div>
     );
 }
