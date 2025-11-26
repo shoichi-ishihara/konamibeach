@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Waves } from 'lucide-react';
+import ContactButton from './ContactButton';
 
 export default function Footer() {
     return (
@@ -53,9 +54,7 @@ export default function Footer() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">
-                                            お問い合わせフォーム
-                                        </a>
+                                        <ContactButton />
                                     </li>
                                 </ul>
                             </div>
