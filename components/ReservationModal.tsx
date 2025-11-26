@@ -12,6 +12,8 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
     const [formData, setFormData] = useState({
         nameKanji: '',
         nameKana: '',
+        checkInDate: '',
+        checkOutDate: '',
         address: '',
         phone: '',
         email: '',
@@ -51,6 +53,8 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
                 setFormData({
                     nameKanji: '',
                     nameKana: '',
+                    checkInDate: '',
+                    checkOutDate: '',
                     address: '',
                     phone: '',
                     email: '',
@@ -137,6 +141,40 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
                                             id="nameKana"
                                             required
                                             value={formData.nameKana}
+                                            onChange={handleChange}
+                                            className="block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-base sm:leading-6"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="checkInDate" className="block text-base font-medium leading-6 text-gray-900">
+                                        チェックイン日 <span className="text-red-500">*</span>
+                                    </label>
+                                    <div className="mt-2">
+                                        <input
+                                            type="date"
+                                            name="checkInDate"
+                                            id="checkInDate"
+                                            required
+                                            value={formData.checkInDate}
+                                            onChange={handleChange}
+                                            className="block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-base sm:leading-6"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label htmlFor="checkOutDate" className="block text-base font-medium leading-6 text-gray-900">
+                                        チェックアウト日 <span className="text-red-500">*</span>
+                                    </label>
+                                    <div className="mt-2">
+                                        <input
+                                            type="date"
+                                            name="checkOutDate"
+                                            id="checkOutDate"
+                                            required
+                                            value={formData.checkOutDate}
                                             onChange={handleChange}
                                             className="block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary text-base sm:leading-6"
                                         />

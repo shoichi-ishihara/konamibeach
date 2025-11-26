@@ -4,10 +4,10 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { nameKanji, nameKana, address, phone, email } = body;
+        const { nameKanji, nameKana, checkInDate, checkOutDate, address, phone, email } = body;
 
         // Basic validation
-        if (!nameKanji || !nameKana || !address || !phone || !email) {
+        if (!nameKanji || !nameKana || !checkInDate || !checkOutDate || !address || !phone || !email) {
             return NextResponse.json(
                 { error: 'Missing required fields' },
                 { status: 400 }
@@ -34,6 +34,8 @@ export async function POST(request: Request) {
 
 お名前 (漢字): ${nameKanji}
 お名前 (カナ): ${nameKana}
+チェックイン日: ${checkInDate}
+チェックアウト日: ${checkOutDate}
 住所: ${address}
 電話番号: ${phone}
 メールアドレス: ${email}
@@ -44,6 +46,8 @@ export async function POST(request: Request) {
 <ul>
     <li><strong>お名前 (漢字):</strong> ${nameKanji}</li>
     <li><strong>お名前 (カナ):</strong> ${nameKana}</li>
+    <li><strong>チェックイン日:</strong> ${checkInDate}</li>
+    <li><strong>チェックアウト日:</strong> ${checkOutDate}</li>
     <li><strong>住所:</strong> ${address}</li>
     <li><strong>電話番号:</strong> ${phone}</li>
     <li><strong>メールアドレス:</strong> ${email}</li>
