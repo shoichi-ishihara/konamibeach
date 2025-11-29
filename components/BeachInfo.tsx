@@ -8,7 +8,7 @@ const features = [
         description:
             '水質調査でも高い評価を得ている、透き通るような青い海アクアブルー。シュノーケリングにも最適で、魚たちと一緒に泳ぐことができます。',
         icon: Sparkles,
-        image: '/images/beach-clear-water.svg',
+        image: '/images/clear_water.png',
         reverse: false,
     },
     {
@@ -16,7 +16,7 @@ const features = [
         description:
             '波が穏やかで遠浅な地形のため、小さなお子様連れのご家族でも安心して海水浴をお楽しみいただけます。',
         icon: ShieldCheck,
-        image: '/images/beach-shallow.svg',
+        image: '/images/shallow_beach.png',
         reverse: true,
     },
     {
@@ -24,7 +24,7 @@ const features = [
         description:
             '穴場的なスポットで、混雑しすぎずゆったりとした時間を過ごせます。更衣室やシャワー、休憩所も完備しており、一日中快適に過ごせます。',
         icon: Users,
-        image: '/images/beach-family.svg',
+        image: '/images/family_fun.png',
         reverse: false,
     },
 ];

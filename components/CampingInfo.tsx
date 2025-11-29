@@ -9,7 +9,7 @@ const features = [
         description:
             'ビーチのすぐそばにテントを張れるフリーサイト。波の音をBGMに、最高のロケーションでキャンプを楽しめます。',
         icon: Tent,
-        image: '/images/camping-tent.svg',
+        image: '/images/camping_tent.png',
         reverse: false,
     },
     {
@@ -17,7 +17,7 @@ const features = [
         description:
             '海を見ながらのバーベキューは格別です。食材や機材を持ち込んで、家族や友人と楽しい食事の時間を過ごせます。直火は禁止ですのでコンロをご使用ください。',
         icon: Flame,
-        image: '/images/camping-bbq.svg',
+        image: '/images/bbq_time.png',
         reverse: true,
     },
     {
@@ -25,7 +25,7 @@ const features = [
         description:
             '街の明かりが少ないため、夜には満天の星空が広がります。波音を聞きながら星を眺める、贅沢な時間をお過ごしください。',
         icon: Star,
-        image: '/images/camping-star.svg',
+        image: '/images/star_gazing.png',
         reverse: false,
     },
 ];
